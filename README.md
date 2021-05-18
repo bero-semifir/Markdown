@@ -1,6 +1,6 @@
 # Nom du projet
 
-Super projet machin bidule
+Comment qu'on travaille avec Git.
 
 ## Dépendences
 
