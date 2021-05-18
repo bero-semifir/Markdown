@@ -59,6 +59,12 @@ Pour que le repository distant récupére les modifications (commits), il faut l
 
 Par exemple `git push origin main` pousse les modifications de ma branche main sur la branche origin/main.
 
+### Récupérer les modifications sur le repo distant
+
+Les changements sont poussés (trés) souvent sur le repo distant. Pour les récupérer il faut utiliser la commande pull:
+
+`git push branche-distante branche-locale` par exemple `git pull origin main`
+
 ## Récupérer un répository distant (pour travailler en local)
 
 Dans le cadre d'un projet en général, le répository est déja créé et nos devs n'ont plus qu'a récupérer en local le projet pour pouvoir travailler.
