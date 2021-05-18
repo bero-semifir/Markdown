@@ -2,10 +2,6 @@
 
 Marche à suivre pour travailler avec Git.
 
-bidule
-
-machin pour créer un gros conflit
-
 ## Dépendences
 
 Pour fonctionner ce projet a besoin de:
