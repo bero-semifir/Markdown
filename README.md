@@ -2,6 +2,8 @@
 
 Comment qu'on travaille avec Git.
 
+machin pour créer un conflit
+
 ## Dépendences
 
 Pour fonctionner ce projet a besoin de:
