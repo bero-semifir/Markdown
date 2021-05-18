@@ -4,7 +4,7 @@ Marche à suivre pour travailler avec Git.
 
 bidule
 
-machin pour creer un super conflit
+machin pour créer un gros conflit
 
 ## Dépendences
 
