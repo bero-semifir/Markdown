@@ -125,4 +125,4 @@ Contient la partie préparée pour la mise en production de l'application.
 
 ### hotfix
 
-C'est la branche qui sert à corriger les bugs introduit en prod.
+C'est la branche qui sert à corriger les bugs introduits en prod.
