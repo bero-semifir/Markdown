@@ -4,6 +4,8 @@ Marche à suivre pour travailler avec Git.
 
 truc
 
+machin pour créer un conflit
+
 ## Dépendences
 
 Pour fonctionner ce projet a besoin de:
