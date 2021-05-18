@@ -42,3 +42,19 @@ Pour envoyer le commit à git (faire un checkpoint): `git commit -m "Message de 
 
     Il existe plusieurs conventions pour les messages de commit. Celle d'Angular est la plus propre: `git commit -m "feature/Connexion(fichiers modifiés): Ce qui a été fait sur ce commit"`
 
+## Ajouter un repository distant (remote)
+
+Il faut créer un repo sur l'hebergeur Git de votre choix (GitHub, GitLab, BitBucket, etc).
+
+Il faut ensuite renseigner le repo distant au repo local:
+`git remote add origin url-du-remote`.
+
+> origin fait référence à une variable locale, vous avez le choix de son nom.
+
+### Envoyer les commits
+
+Pour que le repository distant récupére les modifications (commits), il faut lui envoyer.
+
+`git push branche-distante branche-locale`
+
+Par exemple `git push origin main` pousse les modifications de ma branche main sur la branche origin/main.
