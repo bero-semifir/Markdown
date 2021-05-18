@@ -58,3 +58,10 @@ Pour que le repository distant récupére les modifications (commits), il faut l
 `git push branche-distante branche-locale`
 
 Par exemple `git push origin main` pousse les modifications de ma branche main sur la branche origin/main.
+
+## Récupérer un répository distant (pour travailler en local)
+
+Dans le cadre d'un projet en général, le répository est déja créé et nos devs n'ont plus qu'a récupérer en local le projet pour pouvoir travailler.
+
+C'est possible gràce à la commande clone:
+`git clone url-du-repo-distant`. Par exemple pour ce repository il faudrait faire `git clone https://github.com/benoitsemifir/Markdown`.
