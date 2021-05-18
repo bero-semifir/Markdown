@@ -2,6 +2,8 @@
 
 Marche à suivre pour travailler avec Git.
 
+truc
+
 ## Dépendences
 
 Pour fonctionner ce projet a besoin de:
