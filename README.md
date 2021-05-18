@@ -2,7 +2,7 @@
 
 Marche à suivre pour travailler avec Git.
 
-machin
+bidule
 
 machin pour créer un conflit
 
