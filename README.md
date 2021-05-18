@@ -2,7 +2,7 @@
 
 Marche à suivre pour travailler avec Git.
 
-truc
+machin
 
 machin pour créer un conflit
 
