@@ -71,3 +71,58 @@ Dans le cadre d'un projet en général, le répository est déja créé et nos d
 
 C'est possible gràce à la commande clone:
 `git clone url-du-repo-distant`. Par exemple pour ce repository il faudrait faire `git clone https://github.com/benoitsemifir/Markdown`.
+
+## Les branches
+
+Les branches sont un moyen utile de travailler sur un projet (une fonctionnalité du projet) sans impacter le développement des autres utilisateurs. C'est un bon moyen de cloisonner le développement.
+
+### Voir les branches
+
+Pour voir les branches qui ont été créées: `git branch`. Vous verrez la liste des branches et la branche sur laquelle vous êtes est indiqué par une étoile.
+
+### Créer une branche
+
+Pour créer une branche: `git branch nom-de-la-branche`
+
+Astuce: Pour créer une branche et se déplacer en une commande: `git checkout -b nom-branche`.
+
+### Se déplacer vers une branche
+
+Pour aller sur une branche: `git checkout nom-branche`.
+
+note: `git checkout` peut aussi se déplacer sur un commit (attention a ne pas se perdre).
+
+
+## Worflow Git
+
+Il existe différents worflow pour utiliser git en équipe. L'un des plus connus est [git flow](https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow).
+
+Il utilise les branches pour organiser le développement autour des releases (mises en production):
+
+- main
+- develop
+- feature
+- release
+- hotfix
+
+### main
+
+C'est la branche stable ! Elle est protentiellement mise en production et doit donc être parfaitement stable.
+
+### develop
+
+C'est la branche la plus avancée dans le développement, mais pas forcément stable. Elle sert de point de sauvegarde dans l'avancée du projet (elle récupére les features).
+
+### feature
+
+Les branches features sont la partie cloisonnées du développement. Les développeurs mettent leur travail sur ces branches en fonction de la fonctionnalitée développée.
+
+Par exemple les développeurs qui travaillent sur la fonctionnalitée de connexion d'une appli travaillerons sur une branche `feature/connexion`.
+
+### release
+
+Contient la partie préparée pour la mise en production de l'application.
+
+### hotfix
+
+C'est la branche qui sert à corriger les bugs introduit en prod.
