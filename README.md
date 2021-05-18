@@ -42,6 +42,14 @@ Pour envoyer le commit à git (faire un checkpoint): `git commit -m "Message de 
 
     Il existe plusieurs conventions pour les messages de commit. Celle d'Angular est la plus propre: `git commit -m "feature/Connexion(fichiers modifiés): Ce qui a été fait sur ce commit"`
 
+## Annuler un (ou plusieurs) commits
+
+Il arrive de faire des bêtises, git étant un logiciel qui permet de créer des checkpoints dans le temps, vous pouvez retourner en arrière.
+
+`git revert sha-du-commit`
+
+rappel pour obtenir les sha de commit: `git log` ou utiliser outil graphique.
+
 ## Ajouter un repository distant (remote)
 
 Il faut créer un repo sur l'hebergeur Git de votre choix (GitHub, GitLab, BitBucket, etc).
@@ -92,6 +100,26 @@ Pour aller sur une branche: `git checkout nom-branche`.
 
 note: `git checkout` peut aussi se déplacer sur un commit (attention a ne pas se perdre).
 
+### Récupérer les modifications d'une branche
+
+Une fois qu'un développeur a travailler sur une branche (et a terminé sa feature), il faut récupérer son travail ( en général sur la branche develop ).
+
+Il faut donc se placer sur la branche qui doit recevoir les modifications (ici develop) et "merger" la branche qui porte les modifications.
+
+`git checkout develop`: se placer sur la branche `develop`
+`git merge feature/feature`: merger (fusionner) la branche `feature/feature` avec la branche `develop`
+
+N'oubliez pas de mettre à jour le repository distant avec un `git push`.
+
+#### Résoudre les conflits
+
+Il arrive parfois que 2 fichiers entrent en conflit au moment du `merge`. Il faut alors résoudre ce conflit: c'est à dire, indiquer à git quelles modifications il doit garder.
+
+La manière simple: utiliser l'interface de VS Code ou autre gestionnaire Git.
+
+La mannière compliquée:
+- Panniquer
+- utiliser Vim
 
 ## Worflow Git
 
